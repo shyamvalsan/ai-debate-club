@@ -12,7 +12,7 @@ AI Debate Club creates a competitive environment where different language models
 - **Topic Flexibility**: Select from pre-defined debate topics or create your own
 - **Standardized Format**: Debates follow established debate rules and formats
 - **Blind Judging**: An impartial panel of language models evaluates debates without knowing which model produced which argument
-- **User Participation**: Users can submit their own judgments before seeing the official results
+- **User Participation**: Users can submit their own judgments before seeing the official results to better understand bias and compare ELO rankings based on human vs AI evaluation
 - **Performance Analytics**: ELO rating system tracks and displays model performance over time
 
 ## Architecture
@@ -68,4 +68,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Thanks to the developers of the various language models used in this project
-- Inspiration from competitive debate formats and AI evaluation techniques
