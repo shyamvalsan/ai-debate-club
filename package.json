@@ -1,0 +1,47 @@
+{
+  "name": "ai-debate-club",
+  "version": "0.1.0",
+  "description": "A platform for simulating and evaluating structured debates between language models",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "debate": "node src/cli/index.js",
+    "setup": "node scripts/setup.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "postinstall": "npm run setup"
+  },
+  "bin": {
+    "ai-debate-club": "src/cli/index.js"
+  },
+  "author": "Shyam Sreevalsan",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shyamsreevalsan/ai-debate-club.git"
+  },
+  "keywords": [
+    "ai",
+    "debate",
+    "language-model",
+    "llm",
+    "evaluation"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0",
+    "groq-sdk": "^0.3.0",
+    "inquirer": "^9.2.10",
+    "openai": "^3.2.1",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0"
+  }
+}
