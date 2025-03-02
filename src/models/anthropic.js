@@ -4,13 +4,13 @@ dotenv.config();
 
 // Mapping of user-friendly model names to actual API model names
 const MODEL_MAPPING = {
-  'claude-3-7-sonnet-20250219': 'claude-3-sonnet-20240229', // Using latest available version
-  'claude-3-5-sonnet-20240620': 'claude-3-sonnet-20240229',
+  'claude-3-7-sonnet-20250219': 'claude-3-7-sonnet-20250219', // Using latest available version
+  'claude-3-5-sonnet-20240620': 'claude-3-5-sonnet-20241022',
   'claude-3-opus-20240229': 'claude-3-opus-20240229',
-  'claude-sonnet-3.7': 'claude-3-sonnet-20240229',
-  'claude-sonnet-3.5': 'claude-3-sonnet-20240229',
-  'claude-haiku-3.5': 'claude-3-haiku-20240307',
-  'claude-opus-3.5': 'claude-3-opus-20240229',
+  'claude-sonnet-3.7': 'claude-3-7-sonnet-20250219',
+  'claude-sonnet-3.5': 'claude-3-5-sonnet-20241022',
+  'claude-haiku-3.5': 'claude-3-5-haiku-20241022',
+  'claude-opus-3': 'claude-3-opus-20240229',
 };
 
 class AnthropicClient {

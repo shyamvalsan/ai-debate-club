@@ -16,6 +16,9 @@ const MODEL_MAPPING = {
 // Models that use max_completion_tokens instead of max_tokens
 const USES_COMPLETION_TOKENS = ['o1', 'o3-mini'];
 
+// Models that don't support temperature parameter
+const NO_TEMPERATURE_MODELS = ['o1'];
+
 class OpenAIClient {
   constructor(apiKey) {
     this.client = new OpenAI({
@@ -81,9 +84,13 @@ class OpenAIClient {
         // Create request parameters
         const requestParams = {
           model: apiModelName,
-          temperature: 0.7,
           messages: messages,
         };
+        
+        // Add temperature only for models that support it
+        if (!NO_TEMPERATURE_MODELS.includes(apiModelName)) {
+          requestParams.temperature = 0.7;
+        }
         
         // Use the correct token parameter based on the model
         if (USES_COMPLETION_TOKENS.includes(apiModelName)) {

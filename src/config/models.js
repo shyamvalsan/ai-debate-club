@@ -6,7 +6,7 @@ export const MODELS = {
   // Anthropic Models
   'claude-sonnet-3.7': {
     provider: 'anthropic',
-    apiModel: 'claude-3-sonnet-20240229', // Using latest available model
+    apiModel: 'claude-3-7-sonnet-20250219', // Using latest available model
     displayName: 'Claude Sonnet 3.7',
     maxTokens: 4096,
     capabilities: {
@@ -16,18 +16,17 @@ export const MODELS = {
   },
   'claude-sonnet-3.7-thinking': {
     provider: 'anthropic',
-    apiModel: 'claude-3-sonnet-20240229', // Using latest available model
+    apiModel: 'claude-3-7-sonnet-20250219', // Using latest available model
     displayName: 'Claude Sonnet 3.7 (Thinking)',
     maxTokens: 4096,
     capabilities: {
       debater: true,
       judge: true
     },
-    systemPrompt: "Think step-by-step about the arguments before providing your response."
   },
   'claude-sonnet-3.5': {
     provider: 'anthropic',
-    apiModel: 'claude-3-sonnet-20240229',
+    apiModel: 'claude-3-5-sonnet-20241022',
     displayName: 'Claude Sonnet 3.5',
     maxTokens: 4096,
     capabilities: {
